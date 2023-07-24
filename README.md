@@ -99,3 +99,87 @@ Requirements:
 
 Requirements:
   - [ ] Modify the `waitButton3` click event handler function to use async, await syntax with error handling.
+
+## Task7: Using fetch with parameters
+
+- Open the `http://localhost:5500/task2`
+- Work in the `task2/task2.js`
+- Fill the event handler for `button1`
+- Use Star Wars API to solve the tasks: `https://swapi.dev/`
+- Use the `https://swapi.dev/people/${id}` endpoint.
+
+Requirements:
+  - [ ] When the `👾 Hey Luke!` button is clicked, show the name of the character whose ID is typed into the Character ID input field (Try `1` for Luke Skywalker).  
+  - [ ] Async await syntax is used.
+
+Tips:
+  - You can use the `getCharacterId()` helper function.
+  - Use the `https://swapi.dev/people/${id}` endpoint.
+  - You can use `name` property of the response data.
+
+
+## Task7: Multiple fetches
+
+- Open the `http://localhost:5500/task2`
+- Work in the `task2/task2.js`
+- Fill the event handler for `button2`
+- Use Star Wars API to solve the tasks: `https://swapi.dev/`
+
+Requirements:
+  - [ ] When the `🚀 Show their starship!` button is clicked, show the name of the character whose ID is typed into the Character ID input field (Try `1` for Luke Skywalker).
+  - [ ] Show also the character's 1st starship name.
+  - [ ] Async await syntax is used.
+
+Tips:
+  - Use the response data `starship` field. It contains urls.
+
+## Task7: Multiple fetches at same time
+
+- Open the `http://localhost:5500/task2`
+- Work in the `task2/task2.js`
+- Fill the event handler for `button3`
+- Use Star Wars API to solve the tasks: `https://swapi.dev/`
+- Use the `https://swapi.dev/people/${id}` endpoint.
+
+Requirements:
+  - [ ] When the `🚀🚀🚀 Show their starships!` button is clicked, show the name of the character whose ID is typed into the Character ID input field (Try `1` for Luke Skywalker).
+  - [ ] Show also the character's all straship names concatenated with a coma (`,`). It should work for any number of starships.
+  - [ ] Async await syntax is used.
+
+Tips:
+  - You can use `Promise.all()` or `Promise.allSettled()` to start multiple fetches.
+  - You can use `array.join()` method to join an array with a given character.
+
+# Task8, extra: Handle errors with fetches
+
+- Open the `http://localhost:5500/task2`
+- Work in the `task2/task2.js`
+- Fill the event handler for `button1`
+- Use Star Wars API to solve the tasks: `https://swapi.dev/`
+- Use the `https://swapi.dev/people/${id}` endpoint.
+
+Requirements:
+  - [ ] If an invalid URL is used (`e.g.: https://oops.swapi.dev/people/${id}`), the `Error getting the character` error message should be shown.
+  - [ ] If the response's status code is 404 `The character not found` error message should be shown.
+  - [ ] If the response's status code is something than 2xx, `The response is wrong.` error message should be shown.
+
+# Task9, extra: Create a promise from an existing DOM API
+
+- Open the `http://localhost:5500/loading-image`
+- Work in the `loading-image/loading.js`
+- Fill the event handler for `loadButton`
+- This code loads an image. While the image is loading, it shows a loading text.
+- If an error is happened, it shows an error message. You can try it out by modifying the `imageUrl` variable to something invalid.
+- The code use the `img` DOM element's `load` and `error` events to handle these cases  
+
+
+Requirements:
+- [ ] Create a new promise which resolves success, if the image is loaded.
+- [ ] The promise should resolve to failed, if there is some error during loading the image.
+- [ ] The image should be shown on the page if the loading is finished with an error.
+- [ ] The error message should be shown, if an error is happened.
+- [ ] You can use either async await or then syntax.
+
+Tips: 
+  - Check the task1's `waitForUncertainty()` function to inspire yourself with a promise constructor syntax.
+  - If a promise is failed, it's catch get a standard `Error` object. It has a `message` property.
