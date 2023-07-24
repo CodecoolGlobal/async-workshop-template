@@ -46,19 +46,7 @@ Requirements:
 - [ ] After about a 2 secs waiting the `The promise is successfully resolved: ${promiseValue}` message should be shown.
 - [ ] `then` syntax is used.
 
-## Task2: Chain promises
-
-- Open the `http://localhost:5500/task1`
-- Work in the `task1/task1.js`
-- Fill the click handler for `waitButton2`.
-
-Requirements:
-
-- [ ] After about a 2 secs waiting the `The 1st promise is resolved: ${promiseValue}.` message should be shown.
-- [ ] After about a 4 secs later the `The 2nd promise is resolved: ${promiseValue}.` message should be shown.
-- [ ] `then` syntax is used.
-
-## Task3: Chaining non promise values
+## Task2: Chaining non promise values
 
 - Open the `http://localhost:5500/task1`
 - Work in the `task1/task1.js`
@@ -70,6 +58,19 @@ Requirements:
 - [ ] A string value (`I'm just a string.`) should be returned from a `then`'s callback.
 - [ ] Right after the `Constant: ${resolvedValue}` message should be shown.
 - [ ] `then` syntax is used.
+
+## Task3: Chain promises
+
+- Open the `http://localhost:5500/task1`
+- Work in the `task1/task1.js`
+- Fill the click handler for `waitButton2`.
+
+Requirements:
+
+- [ ] After about a 2 secs waiting the `The 1st promise is resolved: ${promiseValue}.` message should be shown.
+- [ ] After about a 4 secs later the `The 2nd promise is resolved: ${promiseValue}.` message should be shown.
+- [ ] `then` syntax is used.
+
 
 ## Task4: Handle errors
 
@@ -150,7 +151,7 @@ Tips:
   - You can use `Promise.all()` or `Promise.allSettled()` to start multiple fetches.
   - You can use `array.join()` method to join an array with a given character.
 
-# Task8, extra: Handle errors with fetches
+# Task8, extra: Handle errors with fetch
 
 - Open the `http://localhost:5500/task2`
 - Work in the `task2/task2.js`
@@ -160,8 +161,12 @@ Tips:
 
 Requirements:
   - [ ] If an invalid URL is used (`e.g.: https://oops.swapi.dev/people/${id}`), the `Error getting the character` error message should be shown.
-  - [ ] If the response's status code is 404 `The character not found` error message should be shown.
+  - [ ] If the response's status code is 404 `The character not found.` error message should be shown.
   - [ ] If the response's status code is something than 2xx, `The response is wrong.` error message should be shown.
+
+Tip:
+  - Fetch promise is rejected only if the network connection is wrong.
+  - You can use the `response.status` or `response.ok` to examine status codes or success of the HTTP message.
 
 # Task9, extra: Create a promise from an existing DOM API
 
