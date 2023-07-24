@@ -11,8 +11,7 @@ You will learn on this workshop:
 
 ## Setting up the repo
 
-- 
-- Download the live server.
+- Make sure that the [Live Server VS code extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) is installed.
 
 ## Async Demo
 
