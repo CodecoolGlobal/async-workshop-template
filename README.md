@@ -29,11 +29,6 @@ Why we need async Javascript?
 - Click the non blocking button
   - check the responsiveness again
 
-## Creating Promises
-
-- Open the `http://localhost:5500/waiting`
-- Follow the live coding.
-
 ## Task1: Handle a success promise
 
 - Open the `http://localhost:5500/task1`
@@ -45,20 +40,7 @@ Requirements:
 - [ ] After about a 2 secs waiting the `The promise is successfully resolved: ${promiseValue}` message should be shown.
 - [ ] `then` syntax is used.
 
-## Task2: Chaining non promise values
-
-- Open the `http://localhost:5500/task1`
-- Work in the `task1/task1.js`
-- Modify the click handler for `waitButton2`.
-
-Requirements:
-
-- [ ] After about a 2 secs waiting the `The 1st promise resolved: ${promiseValue}.` message should be shown.
-- [ ] A string value (`I'm just a string.`) should be returned from a `then`'s callback.
-- [ ] Right after the `Constant: ${resolvedValue}` message should be shown.
-- [ ] `then` syntax is used.
-
-## Task3: Chain promises
+## Task2: Chain promises
 
 - Open the `http://localhost:5500/task1`
 - Work in the `task1/task1.js`
@@ -71,7 +53,7 @@ Requirements:
 - [ ] `then` syntax is used.
 
 
-## Task4: Handle errors
+## Task3: Handle errors
 
 - Open the `http://localhost:5500/task1`
 - Work in the `task1/task1.js`
@@ -83,7 +65,7 @@ Requirements:
 - [ ] If the promise is resolved as a success, the `Promise is resolved as a success: ${promiseValue}` should be shown as a normal message.
 - [ ] If the promise is resolved as a failure, the `Promise is resolved as a failure: ${promiseValue}` should be shown as an error message (colored red).
 
-## Task5: Use the async await syntax
+## Task4: Use the async await syntax
 
 - Open the `http://localhost:5500/task1`
 - Work in the `task1/task1.js`
@@ -92,7 +74,7 @@ Requirements:
   - [ ] Modify the `waitButton` click event handler function to use async, await syntax.
   - [ ] Modify the `waitButton2` click event handler function to use async, await syntax, original 2 promises version. (2 secs, 4 secs)
 
-## Task6: Handle errors with the async await syntax
+## Task5: Handle errors with the async await syntax
 
 - Open the `http://localhost:5500/task1`
 - Work in the `task1/task1.js`
@@ -100,7 +82,7 @@ Requirements:
 Requirements:
   - [ ] Modify the `waitButton3` click event handler function to use async, await syntax with error handling.
 
-## Task7: Using fetch with parameters
+## Task6: Using fetch with parameters
 
 - Open the `http://localhost:5500/task2`
 - Work in the `task2/task2.js`
@@ -133,7 +115,7 @@ Requirements:
 Tips:
   - Use the response data `starship` field. It contains urls.
 
-## Task7: Multiple fetches at same time
+## Task8: Multiple fetches at same time
 
 - Open the `http://localhost:5500/task2`
 - Work in the `task2/task2.js`
@@ -150,7 +132,7 @@ Tips:
   - You can use `Promise.all()` or `Promise.allSettled()` to start multiple fetches.
   - You can use `array.join()` method to join an array with a given character.
 
-# Task8, extra: Handle errors with fetch
+# Task9, extra: Handle errors with fetch
 
 - Open the `http://localhost:5500/task2`
 - Work in the `task2/task2.js`
@@ -161,13 +143,13 @@ Tips:
 Requirements:
   - [ ] If an invalid URL is used (`e.g.: https://oops.swapi.dev/people/${id}`), the `Error getting the character` error message should be shown.
   - [ ] If the response's status code is 404 `The character not found.` error message should be shown.
-  - [ ] If the response's status code is something than 2xx, `The response is wrong.` error message should be shown.
+  - [ ] If the response's status code is something other than 2xx, `The response is wrong.` error message should be shown.
 
 Tip:
   - Fetch promise is rejected only if the network connection is wrong.
   - You can use the `response.status` or `response.ok` to examine status codes or success of the HTTP message.
 
-# Task9, extra: Create a promise from an existing DOM API
+# Task, extra: Create a promise from an existing DOM API
 
 - Open the `http://localhost:5500/loading-image`
 - Work in the `loading-image/loading.js`
