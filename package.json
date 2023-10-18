@@ -1,0 +1,21 @@
+{
+  "name": "async-workshop",
+  "version": "1.0.0",
+  "description": "Async workshop",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodecoolGlobal/async-workshop-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodecoolGlobal/async-workshop-template/issues"
+  },
+  "homepage": "https://github.com/CodecoolGlobal/async-workshop-template#readme"
+}
