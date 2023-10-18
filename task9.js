@@ -17,8 +17,6 @@ import { openSchrodringerBox } from "./promises.js";
 */
 
 const task = async () => {
-  const cat = await openSchrodringerBox()
-  console.log(cat)
 }
 
 task()
