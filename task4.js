@@ -11,6 +11,11 @@ import { getRandomNumber } from "./promises.js";
     example: getRandomNumber()
 
   - use the `then syntax`
+
+  Goal: Handle the promise fulfilled value.
+  Questions:
+    - How can we get back, how can we "unpack" the fulfilled Promise value? 
+    - How would you name the fulfilled value for this particular case?
 */
 
 const task = () => {

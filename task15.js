@@ -16,6 +16,8 @@ import { readFile, writeFile } from 'fs/promises'
     syntax: writeFile(path: string, data: string, encoding: string): Promise
     example: readFile('./some-file.txt', 'here is the file content','utf8')
 
+  Goal: Apply the promise theory to practice chained promises with a native library 
+  with error handling.
 */
 
 const task = () => {

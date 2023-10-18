@@ -9,6 +9,8 @@ import { readFile } from 'fs/promises'
     
     syntax: readFile(path: string, encoding: string): Promise<string>
     example; readFile('./some-file.txt', 'utf8')
+
+  Goal: Apply the promise theory to real life library usage with error handling.
 */
 
 const task = () => {
