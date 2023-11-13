@@ -14,5 +14,5 @@ Questions:
 const task = () => {
   // Your code goes here
 }
-í
+
 task()

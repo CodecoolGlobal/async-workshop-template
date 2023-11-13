@@ -3,18 +3,18 @@ let counter = 0
 let switcher = true
 
 function countBlocking() {
-  while(true) {
+  while (true) {
     counter = counter + 1
     console.log('count blocking')
     counterElement.innerHTML = counter
-  } 
+  }
 }
 
 function countNonBlocking() {
   counter = counter + 1
   counterElement.innerHTML = counter
   console.log('count non-blocking')
-  setTimeout(countNonBlocking, 0) 
+  setTimeout(countNonBlocking, 0)
 }
 
 document
