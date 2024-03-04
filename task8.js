@@ -1,4 +1,4 @@
-import { sleep, getRandomNumber } from './promises'
+import { sleep, getRandomNumber } from './promises.js'
 
 /*
   - Create function that first generate a random number and logs it to the console.
