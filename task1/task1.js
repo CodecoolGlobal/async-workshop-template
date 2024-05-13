@@ -54,18 +54,18 @@ function waitForUncertainty() {
 
 document
   .getElementById('waitButton')
-  .addEventListener('click', async () => {
+  .addEventListener('click', () => {
 
   })
 
 document
   .getElementById('waitButton2')
-  .addEventListener('click', async () => {
+  .addEventListener('click', () => {
 
   })
 
 document
   .getElementById('waitButton3')
-  .addEventListener('click', async () => {
+  .addEventListener('click', () => {
 
   })
