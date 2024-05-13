@@ -24,7 +24,7 @@ function hideError() {
 
 document
   .getElementById('waitButton')
-  .addEventListener('click', async () => {
+  .addEventListener('click', () => {
 
     showMessage('🕐 waiting...')
 
