@@ -13,6 +13,10 @@ import { getRandomNumber } from "./promises.js";
   - use the `then syntax`
 
   Goal: Handle the promise fulfilled value.
+
+  Hints:
+    - https://javascript.info/promise-basics#consumers-then-catch
+
   Questions:
     - How can we get back, how can we "unpack" the fulfilled Promise value? 
     - How would you name the fulfilled value for this particular case?

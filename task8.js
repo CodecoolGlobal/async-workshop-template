@@ -8,6 +8,10 @@ import { sleep, getRandomNumber } from './promises'
   - You can choose between the then or the async - await syntax.
 
   Goal: Pracitce sequential promise chain and accessing the fulfilled value.
+
+  Hints:
+    - https://javascript.info/promise-chaining (first chapter)
+
 */
 
 const task = () => {

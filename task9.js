@@ -15,10 +15,14 @@ import { openSchrodringerBox } from "./promises.js";
 
   - Use the then syntax.
 
-  Goal: Try out Promise rejected state and error handling with catch?
+  Goal: Try out Promise rejected state and error handling with catch.
+
+  Hints:
+    - https://javascript.info/promise-error-handling (first chapter)
+
   Questions:
-    - When the will be the then's callback and when the catch callback will be called?
-    - How we can access the error message.
+    - When will be the then's callback and when the catch callback will be called?
+    - How can we access the error's message?
 */
 
 const task = async () => {

@@ -6,9 +6,12 @@ import { getRandomNumber } from "./promises.js";
 
   Goal: Get the fulfilled value with async-await syntax.
 
+  Hints:
+    - https://javascript.info/async-await
+
 */
 
-const task = () => {
+const task = async () => {
 
 }
 

@@ -8,6 +8,10 @@ export const sleep = (waitingTimeMs) => {
   })
 }
 
+export const sleepTwoSecs = () => {
+  return sleep(2000)
+}
+
 export const getRandomNumber = () => {
   return new Promise((fulfill, reject) => {
     setTimeout(() => {

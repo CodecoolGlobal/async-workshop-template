@@ -6,9 +6,14 @@ Create a function that waits 2 seconds, and then log "Done" to the console.
 
 Goal: Create an async flow
 
+Hints:
+  - https://developer.mozilla.org/en-US/docs/Web/API/setTimeout
+
 Questions:
   - How setTimeout changed the control flow? If we put a console log after the 
     setTimeout call, what will be executed first, the Done console log or this one?
+
+
 */
 
 const task = () => {
