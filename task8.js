@@ -6,6 +6,8 @@ import { sleep, getRandomNumber } from './promises'
   - Then prints "Done" to the console.
   - Use the sleep() and getRandomNumber() functions for it.
   - You can choose between the then or the async - await syntax.
+
+  Goal: Pracitce sequential promise chain and accessing the fulfilled value.
 */
 
 const task = () => {
