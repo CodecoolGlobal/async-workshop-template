@@ -4,19 +4,23 @@ function showMessage(message) {
     .innerText = message
 }
 
-document
-  .getElementById('waitButton')
-  .addEventListener('click', async () => { 
+function hideMessage() {
+  document
+    .getElementById('message')
+    .innerText = ''
+}
 
-    showMessage('waiting...')
+function showError(message) {
+  document
+    .getElementById('error')
+    .innerText = message
+}
 
-    function task() {
-      showMessage('awaited')
-    }
-
-    setTimeout(task, 2000)
-  })
-  
+function hideError() {
+  document
+    .getElementById('error')
+    .innerText = ''
+}
 
 const imageUrl = 'https://images.pexels.com/photos/247600/pexels-photo-247600.jpeg'
 
@@ -30,7 +34,7 @@ document
     image.src = imageUrl
     image.height = 250
     image.addEventListener('load', () => {
-      
+
       console.log('loaded')
       messageElement.innerText = 'loaded.'
       document
