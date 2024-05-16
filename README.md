@@ -43,3 +43,8 @@ Check these longer book chapters, articles, videos and playgrounds if you have s
 - [Javascript info: Async chapters](https://javascript.info/async)
 - [MDN: Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 - [Eloquent Javascript: Asynchronous Programming](https://eloquentjavascript.net/11_async.html)
+- Inside Look at a Modern Browser series by Google (extra)
+  - https://developer.chrome.com/blog/inside-browser-part1
+  - https://developer.chrome.com/blog/inside-browser-part2
+  - https://developer.chrome.com/blog/inside-browser-part3
+  - https://developer.chrome.com/blog/inside-browser-part4
